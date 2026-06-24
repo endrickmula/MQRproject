@@ -34,12 +34,12 @@ const Addproduct = () => {
         //post the data to the API
         try {
             const response = await axios.post("http://endrick.alwaysdata.net/api/add_product", data);
-
+            if (response.status === 200) {
             setLoading("");
 
             // update the message hook to successfullyy added to show the user 
             setSuccess("Product uploaded successfully.$$$")
-
+            }
             // clear the form input fields 
             setProductName("");
             setProductDescription("");

@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"; // used for UI styling
 import axios from "axios"; //used for API access
 import {useState, useEffect} from "react"; //used for state management
-import {useNavigate, Link} from "react-router-dom"; //used for navigation
+import {useNavigate} from "react-router-dom"; //used for navigation
 
 
 const Getproducts = () => {
@@ -46,7 +46,7 @@ const Getproducts = () => {
 
     return (
         <div className="row">    
-             <a class="navbar-brand "></a>
+             {/* <a class="navbar-brand "></a> */}
                  <form className="d-flex" role="search" onsubumit={handlesearch}>
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
       <button class="btn btn-outline-success" type="submit">Search</button>
