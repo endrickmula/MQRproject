@@ -27,10 +27,10 @@ const Makepayment = () => {
 
         // post the data to the API for th transaction to occur
         const response = await axios.post("https://endrick.alwaysdata.net/api/mpesa_payment", data);
-if (response.status === 200) {
-        // setmessage to show the transaction status    
-        setMessage("Please complete payment on your phone");
-}
+        if (response.status === 200) {
+                // setmessage to show the transaction status    
+                setMessage("Please complete payment on your phone");
+        }
 
     }
 
